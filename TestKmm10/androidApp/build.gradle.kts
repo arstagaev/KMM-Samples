@@ -1,3 +1,7 @@
+import com.arstagaev.testkmm10.Versions
+import com.arstagaev.testkmm10.Deps
+import com.arstagaev.testkmm10.Configuration
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -56,5 +60,21 @@ dependencies {
     implementation("io.coil-kt:coil-compose:$coilVersion")
     implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
     implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    /////
+
+    //Voyager:
+    // Navigator
+    implementation("cafe.adriel.voyager:voyager-navigator:${Versions.voyagerVersion}")
+
+    // BottomSheetNavigator
+    implementation("cafe.adriel.voyager:voyager-bottom-sheet-navigator:${Versions.voyagerVersion}")
+
+    // TabNavigator
+    implementation("cafe.adriel.voyager:voyager-tab-navigator:${Versions.voyagerVersion}")
+
+    // Transitions
+    implementation("cafe.adriel.voyager:voyager-transitions:${Versions.voyagerVersion}")
+
 
 }

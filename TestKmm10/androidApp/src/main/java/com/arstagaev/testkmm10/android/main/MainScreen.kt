@@ -11,7 +11,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.arstagaev.testkmm10.android.component.AnimeItem
 import com.arstagaev.testkmm10.android.component.Loading
 import org.koin.androidx.compose.koinViewModel
 

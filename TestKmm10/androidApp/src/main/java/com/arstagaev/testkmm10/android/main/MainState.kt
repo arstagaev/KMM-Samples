@@ -1,6 +1,5 @@
 package com.arstagaev.testkmm10.android.main
 
-import com.arstagaev.testkmm10.domain.model.Anime
 import com.arstagaev.testkmm10.domain.model.Weather
 
 

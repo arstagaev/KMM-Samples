@@ -18,11 +18,12 @@ internal fun createHttpClient(enableLogging: Boolean): HttpClient {
                 ignoreUnknownKeys = true
             })
         }
-
-        install(Logging) {
-            // use Simple for KMM, for Native targets
-            logger = Logger.SIMPLE
-            level = LogLevel.ALL
+        if (enableLogging) {
+            install(Logging) {
+                // use Simple for KMM, for Native targets
+                logger = Logger.SIMPLE
+                level = LogLevel.ALL
+            }
         }
     }
 }

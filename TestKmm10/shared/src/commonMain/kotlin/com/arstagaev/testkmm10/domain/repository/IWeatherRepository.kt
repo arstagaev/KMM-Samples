@@ -1,9 +1,8 @@
 package com.arstagaev.testkmm10.domain.repository
 
-import com.arstagaev.testkmm10.domain.model.Anime
 import com.arstagaev.testkmm10.domain.model.Weather
 
-interface IAnimeRepository {
+interface IWeatherRepository {
 //    suspend fun getAllCharacters(): List<Anime>
 //    suspend fun getCharacterById(id: Int): Anime
 

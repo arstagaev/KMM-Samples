@@ -15,21 +15,8 @@ class TKClient(
     private val client: HttpClient
 ) {
 
-    suspend fun getWeatherByCity(cityName: String): WeatherDto {
-        //val client = ApiService()
-        var address = "$BASE_URL2?key=$APIKEY&q=$cityName&aqi=no"
-        println("request:::::2::::> $BASE_URL2?key=$APIKEY&q=$cityName&aqi=no")
-        //val a = client.get("$BASE_URL2?key=$APIKEY&q=$cityName&aqi=no")
-        println("pizzdec ${client.engine.config.toString()} ")
-//        CoroutineScope(Dispatchers.Default).launch {
-//
-//        }
-        var a = client.get("$BASE_URL2?key=$APIKEY&q=$cityName&aqi=no").body<WeatherDto>()
-        println(":::3> $${a.toString()}")
-        //address = "google.com"
-        //println(":::>code ${a.status.value}")
-        return a
-    }
+    suspend fun getWeatherByCity(cityName: String): WeatherDto =
+        client.get(NetworkConstants.City.byName(cityName)).body<WeatherDto>()
 
     companion object {
         //private const val PageSize = 20

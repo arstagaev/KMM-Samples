@@ -1,7 +1,6 @@
 package com.arstagaev.testkmm10.data.mapper
 
 import com.arstagaev.testkmm10.data.remote.models.WeatherDto
-import com.arstagaev.testkmm10.domain.model.Anime
 import com.arstagaev.testkmm10.domain.model.Weather
 
 fun WeatherDto.prepareToUI(): Weather {
