@@ -3,34 +3,28 @@ package com.arstagaev.testkmm10
 import com.arstagaev.testkmm10.Versions
 
 object Deps {
-    object Org {
-        object JetBrains {
-            object Kotlinx {
-                const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    object Kotlinx {
+        const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
 
-                const val kotlinxSerializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.serialization}"
-            }
-
-            object KotlinWrappers {
-                const val kotlinWrappersBom = "org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom:${Versions.kotlinWrappersBom}"
-                const val kotlinStyled = "org.jetbrains.kotlin-wrappers:kotlin-styled"
-            }
-        }
+        const val kotlinxSerializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.serialization}"
     }
 
-    object Io {
-        object Ktor {
-            const val ktorClientCore = "io.ktor:ktor-client-core:${Versions.ktor}"
-            const val ktorSerializationKotlinxJson = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
-            const val ktorClientContentNegotiation = "io.ktor:ktor-client-content-negotiation:${Versions.ktor}"
-            const val ktorClientLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
+    object KotlinWrappers {
+        const val kotlinWrappersBom = "org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom:${Versions.kotlinWrappersBom}"
+        const val kotlinStyled = "org.jetbrains.kotlin-wrappers:kotlin-styled"
+    }
 
-            // Engines
-            const val ktorClientAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
-            const val ktorClientDarwin = "io.ktor:ktor-client-darwin:${Versions.ktor}"
-            const val ktorClientJava = "io.ktor:ktor-client-java:${Versions.ktor}"
-            const val ktorClientJs = "io.ktor:ktor-client-js:${Versions.ktor}"
-        }
+    object Ktor {
+        const val ktorClientCore = "io.ktor:ktor-client-core:${Versions.ktor}"
+        const val ktorSerializationKotlinxJson = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
+        const val ktorClientContentNegotiation = "io.ktor:ktor-client-content-negotiation:${Versions.ktor}"
+        const val ktorClientLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
+
+        // Engines
+        const val ktorClientAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
+        const val ktorClientDarwin = "io.ktor:ktor-client-darwin:${Versions.ktor}"
+        const val ktorClientJava = "io.ktor:ktor-client-java:${Versions.ktor}"
+        const val ktorClientJs = "io.ktor:ktor-client-js:${Versions.ktor}"
     }
 
     object Logback {

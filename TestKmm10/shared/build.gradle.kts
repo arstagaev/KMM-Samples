@@ -1,9 +1,12 @@
+import com.arstagaev.testkmm10.Deps
+
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
     id("kotlin-parcelize")
     id("app.cash.sqldelight")
+    id("kotlinx-serialization")
 }
 
 kotlin {
@@ -41,6 +44,7 @@ kotlin {
 
                 implementation("io.ktor:ktor-client-logging:$ktorVersion")
                 api("io.insert-koin:koin-core:$koinVersion")
+                implementation(Deps.Kotlinx.kotlinxSerializationJson)
             }
         }
         val commonTest by getting {

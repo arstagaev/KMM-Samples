@@ -10,20 +10,41 @@ import Foundation
 import shared
 
 extension MainScreen {
-//    @MainActor class MainViewModel: ObservableObject {
-//        private let useCase = GetAllCharactersUseCase.init()
+    @MainActor class MainViewModel: ObservableObject {
+//        private var useCase = GetWeatherByCityUseCase.invoke(GetWeatherByCityUseCase.init())
+//        private var useCase2 = GetWeatherByCityUseCase()
+        
+        
+        private var currentForecast = "cf"
+        @Published private(set) var nowForecast = "NF"
+//        @Published var city = "" {
+//            didSet {
 //
-//        @Published private (set) var animes: [Anime] = []
-//        @Published private (set) var isLoading: Bool = true
-//
-//        func loadCharacters() async {
-//            do {
-//                let characters = try await useCase.invoke() // here changed
-//                self.animes = characters
-//                isLoading = false
-//            } catch {
-//                isLoading = false
 //            }
 //        }
-//    }
+        @Published var viewState: MainState?
+        @Published private (set) var str: String = "none"
+        @Published private (set) var isLoading: Bool = true
+            
+        
+        init(){
+            
+            async {
+                await getWeather(city: "rennes")
+            }
+            
+            
+        }
+        
+        
+        func getWeather(city: String) async {
+            await GetWeatherByCityUseCase().invoke(parameter: city) { result, error in
+                if result != nil {
+                    self.viewState = MainState.init(isLoading: false, error: nil, success: result) //.HasResult(weather: weather)
+                } else {
+                    self.viewState = MainState.init(isLoading: false, error: "Error!!!", success: nil)
+                }
+            }
+        }
+    }
 }

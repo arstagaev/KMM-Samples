@@ -1,8 +1,11 @@
 package com.arstagaev.testkmm10.android.main
 
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.arstagaev.testkmm10.domain.interactor.GetWeatherByCityUseCase
+import com.arstagaev.testkmm10.util.MainState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -10,19 +13,22 @@ import kotlinx.coroutines.launch
 class MainViewModel(
     private val useCase: GetWeatherByCityUseCase
 ): ViewModel() {
-    private val _uiState: MutableStateFlow<MainState> = MutableStateFlow(MainState())
-    val uiState: StateFlow<MainState> get() = _uiState
+    private val _uiState: MutableStateFlow<MainState?> = MutableStateFlow(MainState())
+    val uiState: StateFlow<MainState?> get() = _uiState
+
+    var cityName = mutableStateOf(TextFieldValue())
+
     init {
-        getAllCharacters(name= "Saratov")
+        getAllCharacters(name= "Sochi")
     }
-    private fun getAllCharacters(name: String) {
+    fun getAllCharacters(name: String = cityName.value.text) {
+        println("request name: $name")
         viewModelScope.launch {
-            _uiState.value = _uiState.value.copy(isLoading = true)
+            _uiState.value = _uiState.value?.copy(isLoading = true)
             try {
-                val response = useCase
-                _uiState.value = _uiState.value.copy(isLoading = false, success = response.invoke(name))
+                _uiState.value = _uiState.value?.copy(isLoading = false, success = useCase.invoke(name), error = null)
             } catch (e: Exception) {
-                _uiState.value = _uiState.value.copy(error = e.message.toString(), isLoading = false)
+                _uiState.value = _uiState.value?.copy(error = e.message.toString(), isLoading = false)
             }
         }
     }

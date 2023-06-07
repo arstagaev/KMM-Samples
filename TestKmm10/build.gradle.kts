@@ -4,17 +4,6 @@ plugins {
     id("com.android.library").version("8.0.1").apply(false)
     kotlin("android").version("1.8.10").apply(false)
     kotlin("multiplatform").version("1.8.10").apply(false)
-
-//    kotlin("plugin.serialization") version "1.8.10" apply false
-//    id("app.cash.sqldelight") version "2.0.0-alpha05"
-
-//    kotlin("multiplatform") version "1.8.10" apply false
-//    kotlin("android") version "1.8.10" apply false
-
-//    id("com.android.application").apply(false)
-    //id("com.android.library").apply(false)
-    //id("org.jetbrains.compose").apply(false)
-
     kotlin("plugin.serialization") version "1.8.10" apply false
     id("app.cash.sqldelight") version "2.0.0-alpha05" apply false
 }

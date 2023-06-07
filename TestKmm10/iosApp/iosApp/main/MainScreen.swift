@@ -10,11 +10,38 @@ import SwiftUI
 import shared
 
 struct MainScreen: View {
-    //@StateObject var viewModel = MainViewModel()
-    let gridColumns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 16), count: 2)
-  
+    
+    @StateObject var viewModel = MainViewModel()
+    
     var body: some View {
-        Text("Hi")
+        Text("Pizdec")
+        
+        ZStack {
+                        //BackgroundView()
+            if(viewModel.viewState?.success != nil){
+                let weather = viewModel.viewState?.success
+                VStack {
+                    Text("Weather +++" + (weather?.country)!)
+                    Text("Weather +++" + (weather?.name)!)
+                    Text("Weather +++ \(weather?.feelslike_c ?? -999)" )
+                }
+                
+//                            WeatherDescriptionView(
+//                                txt: successState.success?.country
+//                            )
+            } else if(viewModel.viewState?.error != nil){
+                
+                Text("Error ><. " + (viewModel.viewState?.error ?? "piz error")!)
+
+            } else if (viewModel.viewState?.isLoading == true){
+                            Text("Loading...")
+            }
+        }
+    }
+//    let gridColumns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 16), count: 2)
+//
+//    var body: some View {
+//        Text("Hi")
 //        NavigationStack {
 //            ScrollView {
 //                LazyVGrid(columns: gridColumns, spacing: 16) {
@@ -33,8 +60,8 @@ struct MainScreen: View {
 //                }
 //            }.navigationTitle("Anime Characters")
 //        }.task {
-//            await viewModel.loadCharacters()
+//            await viewModel.getAllCharacters()
 //        }
-    }
+//  }
 }
 

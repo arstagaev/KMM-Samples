@@ -7,7 +7,5 @@ import org.koin.core.component.inject
 
 class GetWeatherByCityUseCase: KoinComponent, BaseUseCase<String,Weather> {
     private val repository: IWeatherRepository by inject()
-    override suspend fun invoke(cityName: String): Weather {
-        return repository.getWeatherByCity(cityName)
-    }
+    override suspend fun invoke(cityName: String) = repository.getWeatherByCity(cityName)
 }
