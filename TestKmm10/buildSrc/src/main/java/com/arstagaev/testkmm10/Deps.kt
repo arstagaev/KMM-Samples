@@ -52,8 +52,4 @@ object Deps {
         const val compose = "io.insert-koin:koin-compose:${Versions.koinCompose}"
         const val composeNavigation = "io.insert-koin:koin-androidx-compose-navigation:${Versions.koinComposeAndroidx}"
     }
-
-    object Github {
-        const val imageLoader = "io.github.qdsfdhvh:image-loader:${Versions.imageLoader}"
-    }
 }

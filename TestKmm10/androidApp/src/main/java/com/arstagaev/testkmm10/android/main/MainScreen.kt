@@ -49,89 +49,89 @@ object MainScreen: Screen {
 
         if (state?.isLoading == true) {
             Loading()
-        }
+        }else {
+            Column(
+                Modifier
+                    .fillMaxSize()
+                    .background(Color.White)) {
+                Text(text = "Weather Forecast \n please choose city:", modifier = Modifier.fillMaxWidth(1f) ,  fontSize=22.sp, textAlign = TextAlign.Center)
 
-        Column(
-            Modifier
-                .fillMaxSize()
-                .background(Color.White)) {
-            Text(text = "Weather Forecast \n please choose city:", modifier = Modifier.fillMaxWidth(1f) ,  fontSize=22.sp, textAlign = TextAlign.Center)
-
-            state?.success?.let {
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
-                    AsyncImage(
-                        model = it.condition.icon,
-                        contentDescription = "image",
-                        contentScale = ContentScale.FillBounds,
-                        modifier = Modifier
-                            .size(100.dp)
-                    )
+                state?.success?.let {
+                    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+                        AsyncImage(
+                            model = it.condition.icon,
+                            contentDescription = "image",
+                            contentScale = ContentScale.FillBounds,
+                            modifier = Modifier
+                                .size(100.dp)
+                        )
+                    }
                 }
-            }
 
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(10.dp))
-            //Text(text = "Weather Forecast")
+                Spacer(modifier = Modifier
+                    .fillMaxWidth()
+                    .height(10.dp))
+                //Text(text = "Weather Forecast")
 
-            TextField(modifier = Modifier
-                .fillMaxWidth()
-                .padding(15.dp)
-                .height(50.dp),
-                label = { Text("Enter city name") },
-                value = textState.value, onValueChange = {
-                    textState.value = it
-                    //vm.cityName.value = it
-                }
-            )
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp))
-            Box(modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp)
-                .padding(horizontal = 35.dp, vertical = 5.dp)
+                TextField(modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(15.dp)
+                    .height(50.dp),
+                    label = { Text("Enter city name") },
+                    value = textState.value, onValueChange = {
+                        textState.value = it
+                        //vm.cityName.value = it
+                    }
+                )
+                Spacer(modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp))
+                Box(modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp)
+                    .padding(horizontal = 35.dp, vertical = 5.dp)
 //                .border( width = 0.dp,
 //                    color = Color.Red,
 //                    shape = RoundedCornerShape(35.dp))
-                .clip(RoundedCornerShape(10.dp, 10.dp, 10.dp, 10.dp))
-                .background(Color(255, 192, 203))
-                .clickable {
-                    vm.getAllCharacters()
-                }, contentAlignment = Alignment.Center,
+                    .clip(RoundedCornerShape(10.dp, 10.dp, 10.dp, 10.dp))
+                    .background(Color(255, 192, 203))
+                    .clickable {
+                        vm.getAllCharacters()
+                    }, contentAlignment = Alignment.Center,
 
-            ){
-                Text(modifier = Modifier, text = "Request forecast", textAlign = TextAlign.Center, fontSize = 20.sp, color = Color.Red)
-            }
-            if (state?.success != null) {
-                state?.success?.let {
-                    Row(Modifier.fillMaxWidth()) {
-                        Column(Modifier.fillMaxWidth(),
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
-                            Text(modifier = Modifier
-                                .padding(vertical = 3.dp), text = "Success forecast:", fontSize = 20.sp)
-                            Text(modifier = Modifier
-                                .padding(vertical = 3.dp), text = "Location: ${it.name} ${it.country}", fontSize = 20.sp)
-                            Text(modifier = Modifier
-                                .padding(vertical = 3.dp), text = "Temp: ${it.feelslike_c}", fontSize = 20.sp)
-                            Text(modifier = Modifier
-                                .padding(vertical = 3.dp), text = "Local time: ${it.localtime}", fontSize = 20.sp)
+                    ){
+                    Text(modifier = Modifier, text = "Request forecast", textAlign = TextAlign.Center, fontSize = 20.sp, color = Color.Red)
+                }
+                if (state?.success != null) {
+                    state?.success?.let {
+                        Row(Modifier.fillMaxWidth()) {
+                            Column(Modifier.fillMaxWidth(),
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Text(modifier = Modifier
+                                    .padding(vertical = 3.dp), text = "Success forecast:", fontSize = 20.sp)
+                                Text(modifier = Modifier
+                                    .padding(vertical = 3.dp), text = "Location: ${it.name} ${it.country}", fontSize = 20.sp)
+                                Text(modifier = Modifier
+                                    .padding(vertical = 3.dp), text = "Temp: ${it.feelslike_c}", fontSize = 20.sp)
+                                Text(modifier = Modifier
+                                    .padding(vertical = 3.dp), text = "Local time: ${it.localtime}", fontSize = 20.sp)
+                            }
                         }
+
                     }
+                } else {
+                    state?.error?.let {
+                        Text(modifier = Modifier.fillMaxWidth(), text = "Error forecast", fontSize = 20.sp)
+                    }
+                }
 
-                }
-            } else {
-                state?.error?.let {
-                    Text(modifier = Modifier.fillMaxWidth(), text = "Error forecast", fontSize = 20.sp)
-                }
+
+
+
+
+
             }
-
-
-
-
-
-
         }
     }
 }

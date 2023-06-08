@@ -10,9 +10,4 @@ object NetworkConstants {
         val byName: (String) -> String = { name -> "$route$name&aqi=no"}
     }
 
-    //https://collectionapi.metmuseum.org/public/collection/v1/objects/327161
-//    object Object {
-//        const val route = baseUrl1 + "public/collection/v1/objects/"
-//        val byIds: (String) -> String = { name -> "$route$name"}
-//    }
 }

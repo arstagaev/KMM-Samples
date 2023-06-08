@@ -61,8 +61,6 @@ dependencies {
     implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
     implementation("androidx.navigation:navigation-compose:$navVersion")
 
-    /////
-
     //Voyager:
     // Navigator
     implementation("cafe.adriel.voyager:voyager-navigator:${Versions.voyagerVersion}")

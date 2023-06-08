@@ -3,6 +3,7 @@ package com.arstagaev.testkmm10.data.mapper
 import com.arstagaev.testkmm10.data.remote.models.Condition
 import com.arstagaev.testkmm10.data.remote.models.WeatherDto
 import com.arstagaev.testkmm10.domain.model.Weather
+import com.arstagaev.testkmm10.extensions.withHttps
 
 fun WeatherDto.prepareToUI(): Weather {
     return Weather(
@@ -15,7 +16,7 @@ fun WeatherDto.prepareToUI(): Weather {
         cloud = current.cloud,
         condition = Condition(
             current.condition.code,
-            "https:"+current.condition.icon,
+            current.condition.icon.withHttps(),
             current.condition.text
         ),
         feelslike_c = current.feelslike_c
