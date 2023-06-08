@@ -11,6 +11,6 @@ data class Weather(
     val region: String,
 
     val cloud: Int,
-    val condition: String,
+    val condition: Condition,
     val feelslike_c: Double,
 )

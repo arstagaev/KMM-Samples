@@ -12,23 +12,47 @@ import shared
 struct MainScreen: View {
     
     @StateObject var viewModel = MainViewModel()
+    @State private var newCity: String = ""
+    
     
     var body: some View {
-        Text("Pizdec")
         
-        ZStack {
+        ScrollView {
                         //BackgroundView()
             if(viewModel.viewState?.success != nil){
                 let weather = viewModel.viewState?.success
-                VStack {
-                    Text("Weather +++" + (weather?.country)!)
-                    Text("Weather +++" + (weather?.name)!)
-                    Text("Weather +++ \(weather?.feelslike_c ?? -999)" )
+                VStack(alignment: .center, spacing: 12) {
+                    Text("Weather Forecast \nplease choose city:")
+                    AsyncImage(url: URL(string: (weather?.condition.icon)!)) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 100, maxHeight: 100)
+                    }placeholder: {
+                                            ProgressView()
+                    }
+                    Spacer().frame(height: 50)
+                    TextField("Enter city name", text: $newCity).frame(height: 60).background(Color.gray.opacity(0.3)).padding(10)
+                    Button(action: {
+                        async {
+                            await viewModel.getWeather(city: newCity)
+                        }
+                        
+                    }) {
+                        Text("Request forecast")
+                    }.buttonStyle(.bordered).tint(.pink)
+                    
+//                    if !newCity.isEmpty {
+//                       Text("My City: \(newCity)!")
+//                    }
+                    Text("Success forecast:")
+                    Text("Location:  \(weather?.name ?? "NaN")  \(weather?.country ?? "NaN") ")
+                    Text("Temp: \(Int(weather?.feelslike_c ?? -999) )")
+                    Text("Local time: \(weather?.localtime ?? "NaN")" )
+                    
+                    
+                    
                 }
-                
-//                            WeatherDescriptionView(
-//                                txt: successState.success?.country
-//                            )
+              
             } else if(viewModel.viewState?.error != nil){
                 
                 Text("Error ><. " + (viewModel.viewState?.error ?? "piz error")!)
