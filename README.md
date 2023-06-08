@@ -7,9 +7,11 @@
   </tr>
 </table>
 
-| № | Project | Feature |
-| ------ | ------ | ------ |
-| 1 | TestKmmm10 | Weather app |
+| № | Project | Feature | Tech Stack |
+| ------ | ------ | ------ | ------ |
+| 1 | TestKmmm10 | Weather app | Voyager, Compose, Koin, Ktor  |
+
+
 
 
 
