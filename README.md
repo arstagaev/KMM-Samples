@@ -9,7 +9,7 @@
 
 | № | Project | Feature | Tech Stack |
 | ------ | ------ | ------ | ------ |
-| 1 | TestKmmm10 | Weather app | Voyager, Compose, Koin, Ktor  |
+| 1 | WeatherApp | Weather app | Voyager, Compose, Koin, Ktor  |
 
 
 
