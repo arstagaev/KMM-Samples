@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TestKmm10"
+rootProject.name = "WeatherApp"
 include(":androidApp")
 include(":shared")

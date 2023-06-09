@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b1466bd-4a09-4de9-8ac1-e5b8d9499a90" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/BaseApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/MyApplicationTheme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/component/Loading.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/di/AndroidModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/main/MainScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android/main/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/java/com/arstagaev/testkmm10/Configuration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/java/com/arstagaev/testkmm10/Deps.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/java/com/arstagaev/testkmm10/Versions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Local Podspecs/shared.podspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Manifest.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-acknowledgements.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-acknowledgements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-Debug-input-files.xcfilelist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-Debug-output-files.xcfilelist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-Release-input-files.xcfilelist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-Release-output-files.xcfilelist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/shared/shared.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Target Support Files/shared/shared.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/Assets.xcassets/AccentColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/Preview Content/Preview Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/detail/DetailScreen.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/iOSApp.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/main/MainScreen.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/main/MainViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/shared.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10/Platform.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10/createPlatformHttpClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10/util/Dispatcher.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10/util/String.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/Platform.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/createPlatformHttpClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/mapper/Mapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/NetworkConstants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/WeatherClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/WeatherClientFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/models/Condition.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/models/Current.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/models/Location.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote/models/WeatherDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/repository/WeatherRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/di/SharedModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/domain/interactor/BaseUseCase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/domain/interactor/GetWeatherByCityUseCase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/domain/model/Weather.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/domain/repository/IWeatherRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/extensions/String.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/util/Dispatcher.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/util/MainState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10/Platform.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10/createPlatformHttpClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10/util/Dispatcher.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10/util/KoinHelper.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/arsenx/.android/avd/Pixel_4_API_31_Android_12.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/shared">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/androidApp">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="androidApp" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="androidApp" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="androidApp" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TestKmm10" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KotlinMultiplatform" KONAN_HOME="$USER_HOME$/.konan/kotlin-native-prebuilt-macos-aarch64-1.8.10">
+    <executable TARGET="ios_simulator_arm64" TARGET_NAME="iosSimulatorArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
+      <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosSimulatorArm64" FILE="$PROJECT_DIR$/shared/build/bin/iosSimulatorArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
+        <envs />
+      </variant>
+    </executable>
+    <executable TARGET="ios_arm64" TARGET_NAME="iosArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
+      <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosArm64" FILE="$PROJECT_DIR$/shared/build/bin/iosArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
+        <envs />
+      </variant>
+    </executable>
+    <executable TARGET="ios_x64" TARGET_NAME="iosX64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
+      <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosX64" FILE="$PROJECT_DIR$/shared/build/bin/iosX64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
+        <envs />
+      </variant>
+    </executable>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QcT622tb5YF6egI5pguLySFPLl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "last_opened_file_path": "/Users/arsenx/AndroidStudioProjects/amazing-kmm/TestKmm10/buildSrc",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/buildSrc" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/data/remote" />
+      <recent name="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10" />
+      <recent name="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10" />
+      <recent name="$PROJECT_DIR$/androidApp/src/main/java/com/arstagaev/testkmm10/android" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/arstagaev/testkmm10/util" />
+      <recent name="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/arstagaev/testkmm10" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/arstagaev/testkmm10/util" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.arstagaev.testkmm10.domain.repository" />
+      <recent name="com.arstagaev.testkmm10.data.remote.models" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.arstagaev.testkmm10.util" />
+      <recent name="com.arstagaev.testkmm10.data.remote" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.androidApp">
+    <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="WeatherApp.androidApp.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iosApp" type="KmmRunConfiguration" factoryName="iOS Application" CONFIG_VERSION="1" EXEC_TARGET_ID="F033AEB9-48EC-4494-854F-422F8E89D628" XCODE_PROJECT="$PROJECT_DIR$/iosApp/iosApp.xcworkspace" XCODE_CONFIGURATION="Debug" XCODE_SCHEME="iosApp">
+      <method v="2">
+        <option name="com.jetbrains.kmm.ios.BuildIOSAppTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b1466bd-4a09-4de9-8ac1-e5b8d9499a90" name="Changes" comment="" />
+      <created>1685651691192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685651691192</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
