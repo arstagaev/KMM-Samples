@@ -111,7 +111,6 @@ object MainScreen: Screen {
                                     .padding(vertical = 3.dp), text = "Local time: ${it.localtime}", fontSize = 20.sp)
                             }
                         }
-
                     }
                 } else {
                     state?.error?.let {

@@ -1,0 +1,15 @@
+CREATE TABLE City (
+    cityName TEXT NOT NULL,
+    temp TEXT NOT NULL
+);
+
+insertLaunch:
+INSERT INTO City(cityName, temp)
+VALUES(?,?);
+
+removeAllLaunches:
+DELETE FROM City;
+
+selectAllLaunchesInfo:
+SELECT City.*
+FROM City;

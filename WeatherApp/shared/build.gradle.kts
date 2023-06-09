@@ -44,6 +44,11 @@ kotlin {
                 api(Deps.Koin.core)
                 implementation(Deps.Serialization.json)
 
+
+                with(Deps.SQLDelight) {
+                    api(coroutinesExtensions)
+                    api(primitiveAdapters)
+                }
             }
         }
         val commonTest by getting {
@@ -55,6 +60,9 @@ kotlin {
             dependencies {
                 implementation(Deps.Ktor.engineClientAndroid)
                 api(Deps.Koin.android)
+
+                // SqlDelight
+                implementation(Deps.SQLDelight.androidDriver)
             }
         }
         val androidUnitTest by getting
@@ -64,6 +72,8 @@ kotlin {
         val iosMain by creating {
             dependencies{
                 implementation(Deps.Ktor.engineClientDarwin)
+
+                implementation(Deps.SQLDelight.nativeDriver)
             }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
@@ -87,5 +97,14 @@ android {
     compileSdk = Configuration.compileSdk
     defaultConfig {
         minSdk = Configuration.minSdk
+    }
+}
+
+sqldelight {
+    databases {
+        create("AppDatabase") {
+            //sqldelight/com/arstagaev/testkmm10/cache/AppDatabase.sq
+            packageName.set("com.arstagaev.testkmm10.cache")
+        }
     }
 }

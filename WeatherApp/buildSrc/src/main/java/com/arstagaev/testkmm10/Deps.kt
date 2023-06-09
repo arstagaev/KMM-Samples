@@ -51,17 +51,15 @@ object Deps {
         const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logbackClassic}"
     }
 
-    object CashApp {
-        object SQLDelight {
-            const val gradlePlugin = "app.cash.sqldelight:gradle-plugin:${Versions.sqlDelight}"
-            const val androidDriver = "app.cash.sqldelight:android-driver:${Versions.sqlDelight}"
-            const val sqliteDriver = "app.cash.sqldelight:sqlite-driver:${Versions.sqlDelight}"
-            const val nativeDriver = "app.cash.sqldelight:native-driver:${Versions.sqlDelight}"
-            const val sqljsDriver = "app.cash.sqldelight:sqljs-driver:${Versions.sqlDelight}"
+    object SQLDelight {
+        const val gradlePlugin = "app.cash.sqldelight:gradle-plugin:${Versions.sqlDelight}"
+        const val androidDriver = "app.cash.sqldelight:android-driver:${Versions.sqlDelight}"
+        const val sqliteDriver = "app.cash.sqldelight:sqlite-driver:${Versions.sqlDelight}"
+        const val nativeDriver = "app.cash.sqldelight:native-driver:${Versions.sqlDelight}"
+        const val sqljsDriver = "app.cash.sqldelight:sqljs-driver:${Versions.sqlDelight}"
 
-            const val coroutinesExtensions = "app.cash.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
-            const val primitiveAdapters = "app.cash.sqldelight:primitive-adapters:${Versions.sqlDelight}"
-        }
+        const val coroutinesExtensions = "app.cash.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
+        const val primitiveAdapters = "app.cash.sqldelight:primitive-adapters:${Versions.sqlDelight}"
     }
 
     object Koin {

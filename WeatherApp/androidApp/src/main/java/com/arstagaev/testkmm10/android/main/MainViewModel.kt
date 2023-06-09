@@ -30,8 +30,6 @@ class MainViewModel(
             _uiState.value = _uiState.value?.copy(isLoading = true)
             try {
                 _uiState.value = _uiState.value?.copy(isLoading = false, success = useCase.invoke(name), error = null)
-                val obj = Locale("", _uiState.value?.success?.country)
-
             } catch (e: Exception) {
                 _uiState.value = _uiState.value?.copy(error = e.message.toString(), isLoading = false)
             }
