@@ -9,11 +9,11 @@ plugins {
 
 android {
     namespace = "com.arstagaev.testkmm10.android"
-    compileSdk = 33
+    compileSdk = Configuration.compileSdk
     defaultConfig {
         applicationId = "com.arstagaev.testkmm10.android"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = Configuration.minSdk
+        targetSdk = Configuration.targetSdk
         versionCode = 1
         versionName = "1.0"
     }
@@ -43,36 +43,22 @@ android {
 }
 
 dependencies {
-    val koinComposeVersion = "3.4.1"
-    val coilVersion = "2.2.2"
-    val accompanistVersion = "0.28.0"
-    val navVersion = "2.5.3"
 
     implementation(project(":shared"))
-    implementation("androidx.compose.ui:ui:1.4.0")
-    implementation("androidx.compose.ui:ui-tooling:1.4.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")
-    implementation("androidx.compose.foundation:foundation:1.4.0")
-    implementation("androidx.compose.material:material:1.4.0")
-    implementation("androidx.activity:activity-compose:1.7.0")
+    implementation(Deps.Compose.ui)
+    implementation(Deps.Compose.uiTooling)
+    implementation(Deps.Compose.uiToolingPreview)
+    implementation(Deps.Compose.foundation)
+    implementation(Deps.Compose.material)
+    implementation(Deps.Compose.activity)
+    implementation(Deps.Compose.navigation)
 
-    implementation("io.insert-koin:koin-androidx-compose:$koinComposeVersion")
-    implementation("io.coil-kt:coil-compose:$coilVersion")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
-    implementation("androidx.navigation:navigation-compose:$navVersion")
+    implementation(Deps.Voyager.navigator)
+    implementation(Deps.Voyager.bottomSheetNavigator)
+    implementation(Deps.Voyager.tabNavigator)
+    implementation(Deps.Voyager.transitions)
 
-    //Voyager:
-    // Navigator
-    implementation("cafe.adriel.voyager:voyager-navigator:${Versions.voyagerVersion}")
-
-    // BottomSheetNavigator
-    implementation("cafe.adriel.voyager:voyager-bottom-sheet-navigator:${Versions.voyagerVersion}")
-
-    // TabNavigator
-    implementation("cafe.adriel.voyager:voyager-tab-navigator:${Versions.voyagerVersion}")
-
-    // Transitions
-    implementation("cafe.adriel.voyager:voyager-transitions:${Versions.voyagerVersion}")
-
-
+    implementation(Deps.Koin.composeAndroidX)
+    implementation(Deps.Coil)
+    implementation(Deps.Accomponist.systemuicontroller)
 }

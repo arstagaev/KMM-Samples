@@ -1,4 +1,5 @@
 import com.arstagaev.testkmm10.Deps
+import com.arstagaev.testkmm10.Configuration
 
 plugins {
     kotlin("multiplatform")
@@ -24,27 +25,25 @@ kotlin {
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
-        version = "1.0"
+        version = Configuration.versionName
         ios.deploymentTarget = "14.1"
         podfile = project.file("../iosApp/Podfile")
         framework {
             baseName = "shared"
         }
     }
-    val coroutinesVersion = "1.6.4"
-    val ktorVersion = "2.2.3"
-    val koinVersion = "3.3.2"
+
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
-                implementation("io.ktor:ktor-client-core:$ktorVersion")
-                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation(Deps.Coroutines.core)
+                implementation(Deps.Ktor.core)
+                implementation(Deps.Ktor.clientContentNegotiation)
+                implementation(Deps.Ktor.serializationKotlinxJson)
+                implementation(Deps.Ktor.clientLogging)
+                api(Deps.Koin.core)
+                implementation(Deps.Serialization.json)
 
-                implementation("io.ktor:ktor-client-logging:$ktorVersion")
-                api("io.insert-koin:koin-core:$koinVersion")
-                implementation(Deps.Kotlinx.kotlinxSerializationJson)
             }
         }
         val commonTest by getting {
@@ -54,9 +53,8 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-android:$ktorVersion")
-
-                api("io.insert-koin:koin-android:$koinVersion")
+                implementation(Deps.Ktor.engineClientAndroid)
+                api(Deps.Koin.android)
             }
         }
         val androidUnitTest by getting
@@ -65,7 +63,7 @@ kotlin {
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
             dependencies{
-                implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+                implementation(Deps.Ktor.engineClientDarwin)
             }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
@@ -86,8 +84,8 @@ kotlin {
 
 android {
     namespace = "com.arstagaev.testkmm10"
-    compileSdk = 33
+    compileSdk = Configuration.compileSdk
     defaultConfig {
-        minSdk = 24
+        minSdk = Configuration.minSdk
     }
 }

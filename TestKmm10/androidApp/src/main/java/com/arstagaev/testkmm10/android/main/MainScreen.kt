@@ -31,11 +31,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import cafe.adriel.voyager.core.screen.Screen
 import coil.compose.AsyncImage
 import com.arstagaev.testkmm10.android.component.Loading
-import org.koin.androidx.compose.inject
 import org.koin.androidx.compose.koinViewModel
 
 
@@ -71,7 +69,6 @@ object MainScreen: Screen {
                 Spacer(modifier = Modifier
                     .fillMaxWidth()
                     .height(10.dp))
-                //Text(text = "Weather Forecast")
 
                 TextField(modifier = Modifier
                     .fillMaxWidth()
@@ -80,7 +77,6 @@ object MainScreen: Screen {
                     label = { Text("Enter city name") },
                     value = textState.value, onValueChange = {
                         textState.value = it
-                        //vm.cityName.value = it
                     }
                 )
                 Spacer(modifier = Modifier
@@ -90,9 +86,6 @@ object MainScreen: Screen {
                     .fillMaxWidth()
                     .height(50.dp)
                     .padding(horizontal = 35.dp, vertical = 5.dp)
-//                .border( width = 0.dp,
-//                    color = Color.Red,
-//                    shape = RoundedCornerShape(35.dp))
                     .clip(RoundedCornerShape(10.dp, 10.dp, 10.dp, 10.dp))
                     .background(Color(255, 192, 203))
                     .clickable {
@@ -125,12 +118,6 @@ object MainScreen: Screen {
                         Text(modifier = Modifier.fillMaxWidth(), text = "Error forecast", fontSize = 20.sp)
                     }
                 }
-
-
-
-
-
-
             }
         }
     }

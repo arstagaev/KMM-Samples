@@ -21,4 +21,7 @@ object Versions {
     const val imageLoader = "1.2.10"
     const val logbackClassic = "1.2.11"
     const val kotlinWrappersBom = "1.0.0-pre.510"
+    const val coilVersion = "2.2.2"
+    const val accompanistVersion = "0.28.0"
+    const val navVersion = "2.5.3"
 }
