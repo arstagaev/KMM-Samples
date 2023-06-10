@@ -102,7 +102,7 @@ android {
 
 sqldelight {
     databases {
-        create("AppDatabase") {
+        create("WeatherDatabase") {
             //sqldelight/com/arstagaev/testkmm10/cache/AppDatabase.sq
             packageName.set("com.arstagaev.testkmm10.cache")
         }

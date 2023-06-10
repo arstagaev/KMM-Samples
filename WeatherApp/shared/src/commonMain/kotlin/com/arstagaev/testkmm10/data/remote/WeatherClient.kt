@@ -12,8 +12,4 @@ class WeatherClient(
     suspend fun getWeatherByCity(cityName: String): WeatherDto =
         client.get(NetworkConstants.City.byName(cityName)).body<WeatherDto>()
 
-    companion object {
-        //private const val PageSize = 20
-    }
-
 }

@@ -27,5 +27,3 @@ internal fun createHttpClient(enableLogging: Boolean): HttpClient {
         }
     }
 }
-
-

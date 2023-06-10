@@ -1,4 +1,4 @@
-package com.arstagaev.testkmm10.domain.repository
+package com.arstagaev.testkmm10.repository
 
 import com.arstagaev.testkmm10.domain.model.Weather
 

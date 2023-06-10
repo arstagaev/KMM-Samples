@@ -3,13 +3,13 @@ CREATE TABLE City (
     temp TEXT NOT NULL
 );
 
-insertLaunch:
+insertCity:
 INSERT INTO City(cityName, temp)
 VALUES(?,?);
 
-removeAllLaunches:
+removeAllCites:
 DELETE FROM City;
 
-selectAllLaunchesInfo:
+selectAllCityInfo:
 SELECT City.*
 FROM City;
