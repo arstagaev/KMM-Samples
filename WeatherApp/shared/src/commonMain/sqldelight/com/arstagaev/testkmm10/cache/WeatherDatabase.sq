@@ -1,0 +1,14 @@
+CREATE TABLE Cityw (
+    cityName TEXT NOT NULL,
+    lastUpd TEXT NOT NULL
+);
+
+insertCity:
+INSERT OR REPLACE INTO Cityw(cityName, lastUpd)
+VALUES (?,?);
+
+removeAllCites:
+DELETE FROM Cityw;
+
+selectAllCityInfo:
+SELECT * FROM Cityw;

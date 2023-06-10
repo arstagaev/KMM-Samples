@@ -49,6 +49,9 @@ kotlin {
                     api(coroutinesExtensions)
                     api(primitiveAdapters)
                 }
+                // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-datetime
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+
             }
         }
         val commonTest by getting {
@@ -103,7 +106,7 @@ android {
 sqldelight {
     databases {
         create("WeatherDatabase") {
-            //sqldelight/com/arstagaev/testkmm10/cache/AppDatabase.sq
+            //sqldelight/com/arstagaev/testkmm10/cache/WeatherDatabase.sq
             packageName.set("com.arstagaev.testkmm10.cache")
         }
     }
